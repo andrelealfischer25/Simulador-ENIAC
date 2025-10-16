@@ -116,7 +116,7 @@
     // dígitos 0..9 correspondem a linhas 0..9 (topo para baixo)
     function exibirNumero(num) {
       limparLeds();
-      const inteiro = Math.abs(Math.floor(num));
+      const inteiro = Math.abs(Math.round(num));
       const str = inteiro.toString();
 
       // percorrer do último caractere (unidade) para o primeiro
@@ -180,6 +180,7 @@
   </script>
 </body>
 </html>
+
 
 
 
